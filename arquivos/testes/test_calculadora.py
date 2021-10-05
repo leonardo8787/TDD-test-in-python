@@ -1,6 +1,20 @@
 import unittest
-from calcula import soma, subtrai
+from arquivos.src.calcula import soma, subtrai
 
+try:
+    import sys
+    import os
+
+    sys.path.append(
+        os.path.abspath(
+            os.path.join(
+                os.path.dirname(__file__),
+                '../src'
+            )
+        )
+    )
+except:
+    raise
 
 class TestCalculadora(unittest.TestCase):
     def test_soma_5_e_5_deve_retornar_10(self):

@@ -23,8 +23,7 @@ except:
     raise
 
 import unittest
-from baconcomovos import bacon_com_ovos
-
+from arquivos.src.baconcomovos import bacon_com_ovos
 
 class TestBaconComOvos(unittest.TestCase):
     def test_bacon_com_ovos_deve_levantar_assertion_error_se_nao_receber_int(self):

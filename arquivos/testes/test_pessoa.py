@@ -27,7 +27,7 @@ except:
 
 import unittest
 from unittest.mock import patch
-from Pessoa import Pessoa
+from arquivos.src.Pessoa import Pessoa
 
 
 class TestPessoa(unittest.TestCase):
